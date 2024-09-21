@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  background: linear-gradient(to right, blue, green);
+}
+
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+  justify-content: center;
+  height: 50vh;
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+.btn-container button {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  border: solid 1px white;
+}
